@@ -1,0 +1,311 @@
+@media(max-width: 992px){
+    .navbar-toggler-icon {
+        filter: brightness(0) invert(1);
+    }
+    #capture-2{
+        position: unset;
+    }
+    #wedding-ph .container .row{
+        flex-direction: column-reverse;
+    }
+    .welcome .col-lg-6.mt-5.pt-5 h2{
+        text-align: center !important;
+    }
+    .welcome .col-lg-6.mt-5.pt-5 img{
+        display: block;
+        margin: 0 auto;
+    }
+    #welcome-img{
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+    .work .gradient-line{
+        width: 30%; /* Adjust width as needed */
+        height: 4px; /* Adjust height for thickness */
+        background: linear-gradient(to right, #FFAA00, black);
+        display: block;
+        position: unset;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .work .col-lg-8 .d-flex.flex-row.gap-4{
+        flex-direction: column !important;
+    }
+    .work .col-lg-4 h2{
+        text-align: center;
+    }
+}
+@media(max-width: 767px) {
+    .img1 {
+        grid-column: span 4;
+        height: 100%;     
+    }
+    
+    .img2 {
+        grid-column: span 4;  
+        height: 100%; 
+    }
+    
+    .img3 {
+        grid-column: span 4;
+        height: 100%;
+    }
+    
+    .img4 {
+        grid-column: span 4; 
+        grid-row: 2 / 3;   
+        height: 100%; 
+        object-position: center;
+    }
+    .work .container .row h2{
+        position: relative;
+        right: 30px;
+    }
+    .personalized .container .person-info h2{
+        font-size: 20px !important;
+    }
+    .personalized .container .person-info h3{
+        font-size: 40px !important;
+    }
+    .collaborations .container h2{
+        font-size: 32px;
+    }
+    .capture .container h3{
+        font-size: 42px !important;
+    }
+    .quotes .container .col-lg-6 img{
+        width: 70%;
+    }
+    .quotes .container .col-lg-6 h2{
+        text-align: center;
+        padding: unset !important;
+        margin-top: 20px;
+    }
+    .foot .copy{
+        flex-direction: column;
+    }
+    .foot .container .gradient-line{
+        position: unset;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .foot .container h2{
+        padding: unset !important;
+        text-align: center !important;
+    }
+}
+
+@media(max-width:476px){
+    #words{
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    #words h2{
+        font-size: 20px;
+    }
+    .quotes .container .swiper {
+        width: 100%;
+        min-height: 350px;
+    }
+    .quotes .swiper-button-prev,
+    .quotes .swiper-button-next {
+        left: 50%;
+    }
+    #welcome_img{
+        margin: unset !important;
+        padding-top: 20px !important;
+    }
+    .welcome .container-fluid .col-lg-12 p{
+        font-size: 14px;
+    }
+    .personalized .container p{
+        margin-bottom: unset !important;
+        /* padding-bottom: unset !important; */
+    }
+    .personalized{
+        min-height: 500px;
+        background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url(../img/personalized-2.jpg) no-repeat right center/cover;
+    }
+    .personalized .container .person-info h2{
+        padding-left: unset !important;
+    }
+    .collaborations .gradient-line{
+        width: 100%; /* Adjust width as needed */
+        height: 4px; /* Adjust height for thickness */
+        background: linear-gradient(to right, #FFAA00, black);
+        display: block;
+        position: absolute;
+        top: 15%;
+        left: 0;
+    }
+    .collaborations .container .heading{
+        justify-content: start !important;
+        align-items: start !important;
+    }
+    #foot-2{
+        justify-content: start !important;
+        align-items: start !important;
+    }
+    .quotes .container .swiper-slide{
+        padding-left: unset !important;
+    }
+    .welcome{
+        min-height: 500px;
+    }
+    #welcome-info{
+        margin-top: unset !important;
+        padding-top: unset !important;
+    }
+    .quotes .container .col-lg-6 img{
+        width: 70%;
+        margin-top: 20px;
+    }
+    .quotes .container .swiper {
+        width: 100%;
+        min-height: 350px;
+    }
+    .quotes .swiper-button-prev,
+    .quotes .swiper-button-next {
+        left: 50%;
+    }
+    .quotes .container .swiper-slide p{
+        font-size: 15px;
+    }
+    .capture .container .row h2{
+        font-size: 32px;
+    }
+    .capture .container .row h3{
+        font-size: 32px !important;
+    }
+    .capture .container .row p{
+        font-size: 20px !important;
+    }
+    .capture .container .row .check a{
+        font-size: 17px;
+    }
+    .personalized .container a{
+        font-size: 13px !important;
+    }
+    .personalized .container p{
+        margin-bottom: unset !important;
+        /* padding-bottom: unset !important; */
+    }
+    .personalized{
+        min-height: 500px;
+        background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url(../img/personalized-2.jpg) no-repeat right center/cover;
+    }
+    #foot-phone{
+        font-size: 30px !important;
+    }
+    .navbar-brand{
+        width: 60% !important;
+    }
+    .collaborations .container .heading{
+        justify-content: start !important;
+        align-items: start !important;
+    }
+    .collaborations .gradient-line{
+        width: 100%; /* Adjust width as needed */
+        height: 4px; /* Adjust height for thickness */
+        background: linear-gradient(to right, #FFAA00, black);
+        display: block;
+        position: absolute;
+        top: 20%;
+        left: 0;
+    }
+    .copy{
+        gap: unset !important;
+    }
+}
+
+@media(max-width: 355px){
+    #aj-white{
+        width: 70%;
+    }
+    .welcome .container-fluid .row h2{
+        font-size: 32px;
+    }
+    .foot .container .col-lg-6 img{
+        width: 70%;
+    }
+    .collaborations .container .heading h2{
+        font-size: 22px;
+    }
+    #paradox{
+        padding: unset !important;
+    }
+    .personalized .container .person-info h3{
+        font-size: 30px !important;
+    }
+    .personalized .container .person-info h2{
+        font-size: 18px !important;
+    }
+    #words h2{
+        font-size: 15px;
+    }
+    .quotes .container .col-lg-6 img{
+        width: 70%;
+        margin-top: 20px;
+    }
+    .quotes .container .swiper {
+        width: 100%;
+        min-height: 350px;
+    }
+    .quotes .swiper-button-prev,
+    .quotes .swiper-button-next {
+        left: 50%;
+    }
+    .quotes .container .swiper-slide p{
+        font-size: 15px;
+    }
+    .capture .container .row h2{
+        font-size: 32px;
+    }
+    .capture .container .row h3{
+        font-size: 32px !important;
+    }
+    .capture .container .row p{
+        font-size: 20px !important;
+    }
+    .capture .container .row .check a{
+        font-size: 17px;
+    }
+    .personalized .container a{
+        font-size: 13px !important;
+    }
+    .personalized .container p{
+        margin-bottom: unset !important;
+        /* padding-bottom: unset !important; */
+    }
+    .personalized{
+        min-height: 500px;
+        background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url(../img/personalized-2.jpg) no-repeat right center/cover;
+    }
+    #foot-phone{
+        font-size: 30px !important;
+    }
+    .navbar-brand{
+        width: 60% !important;
+    }
+    .collaborations .container .heading{
+        justify-content: start !important;
+        align-items: start !important;
+    }
+    .collaborations .gradient-line{
+        width: 100%; /* Adjust width as needed */
+        height: 4px; /* Adjust height for thickness */
+        background: linear-gradient(to right, #FFAA00, black);
+        display: block;
+        position: absolute;
+        top: 20%;
+        left: 0;
+    }
+    #foot-2{
+        justify-content: start !important;
+        align-items: start !important;
+    }
+    .welcome-info{
+        margin-top: unset !important;
+        padding-top: unset !important;
+    }
+}

@@ -1,0 +1,426 @@
+@font-face {
+    font-family: "Swiss 721 BT Light Extended";
+    src: url("../Fonts/FontsFree-Net-Swiss721BT-LightExtended.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: "Algeria";
+    src: url("../Fonts/ALGERIA.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face{
+    font-family: "Arial" , sans-serif;
+    src: url(../Fonts/ARIAL.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none !important;
+    font-family: "Swiss 721 BT Light Extended", sans-serif;
+}
+
+.container{
+    position: relative;
+    max-width: 1270px !important;
+    padding: 0 15px !important;
+    margin: 0 auto !important;
+    width: 100%;
+}
+
+h1{
+    font-family: "Arial" , sans-serif;
+    margin: unset !important;
+    text-align: center;
+}
+
+h2 ,.h2-title{
+    font-size: 42px;
+    line-height : 1.2;
+}
+
+h3, .h3-title{
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.h4-title{
+    font-size: 72px !important;
+    line-height: 1.2;
+}
+
+.clr-ylw{
+    color: #FFAA00;
+}
+
+.navbar{
+    background: linear-gradient(to top,rgba(0,0,0,0.16),rgba(0,0,0,0.9));
+    padding-top: 40px !important;
+    filter: opacity(5);
+    z-index: 1000;
+}
+
+.navbar .container .navbar-brand{
+    width: 15%;
+}
+
+.navbar .container .navbar-brand img{
+    width: 100%;
+}
+
+.navbar .container .collapse .icons{
+    width: 20%;
+}
+.navbar .container .icons i{
+    font-size: 20px;
+}
+
+.navbar.scrolled {
+    background: rgba(0, 0, 0, 0.842) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease-in-out;
+}
+
+
+/* ============banner=============== */
+.banner{
+    min-height: 750px;
+    background: url(../img/banner-2.jpg) no-repeat center center/cover;
+}
+
+.banner .container-fluid{
+    background: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 88%));
+    width: 100%;
+    height: 180px;
+}
+
+/* ===========capture============= */
+.capture{
+    min-height: 700px;
+    background-color: black;
+}
+
+.capture .container .row p{
+    font-size: 25px !important;
+}
+
+#capture-2{
+    position: absolute;
+    right: 0;
+    bottom: -19%;
+}
+
+.check a{
+    padding: 10px 20px;
+    border: 1px solid #C1B9B9;
+    color:  #FFAA00 !important;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+
+.check a:hover{
+    background-color: #fff;
+    color: #000 !important;
+}
+
+/* =========== welcome ====================*/
+.welcome{
+    min-height: 800px;
+    background: url(../img/Mask\ Group\ 3.png) no-repeat; 
+}
+
+/* ========== work ====================== */
+.work{
+    min-height: 800px;
+    background-color: #000;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-auto-rows: 1fr; Ensures rows take equal height */
+    gap: 10px;
+    width: 100%; /* Takes full width of parent */
+    margin: auto;
+}
+
+ .grid-container img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.img1 {
+    grid-column: span 2;
+    height: 100%;     
+}
+
+.img2 {
+    grid-column: span 2;  
+    height: 100%; 
+}
+
+.img3 {
+    grid-column: span 2;
+    height: 100%;
+}
+
+.img4 {
+    grid-column: span 2; 
+    grid-row: 2 / 3;   
+    height: 100%; 
+    object-position: center;
+}
+
+/* Lightbox Styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    flex-direction: column;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+}
+
+.lightbox .nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    padding: 20px;
+}
+
+.nav.prev {
+    left: 20px;
+}
+
+.nav.next {
+    right: 20px;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+#work-buttons a{
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    color: #FFAA00 !important;
+    transition: all 0.1s ease;
+}
+
+#work-buttons a:hover{
+    background-color: #FFAA00;
+    color: #fff !important;
+}
+
+#work-buttons a.active{
+    padding: 5px 10px;
+    background-color: #FFAA00;
+    color: #000 !important;
+}
+
+/* ================collaborations ================= */
+.collaborations{
+    min-height: 480px;
+    background-color: #000;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+/* =============== personalized ================ */
+.personalized{
+    min-height: 500px;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url(../img/personalized-2.jpg) no-repeat center center/cover;
+}
+
+.personalized .container .person-info h3{
+    font-size: 72px;
+}
+
+.personalized .container .person-info a{
+    padding: 10px 30px;
+    border: 1px solid grey;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8));
+    transition: all 0.3s ease;
+}
+
+.personalized .container .person-info a:hover{
+    background-color: #fff;
+    color: #fff !important;
+    background: unset;
+}
+
+/* =============== quotes =================== */
+.quotes{
+    min-height: 666px;
+    background-color: #3d3d3d;
+}
+.quotes .container .swiper {
+    width: 100%;
+    min-height: 200px;
+}
+
+.quotes .container .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding-left: 40px;
+    flex-direction: column;
+}
+
+.quotes .container .swiper-slide h3{
+    color: #FFAA00;
+}
+
+.quotes .container  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quotes .swiper-button-prev,
+.quotes .swiper-button-next {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 90%;
+    top: 90%;
+    transform: translateX(-50%);
+    color: var(--bs-secondary); /* Bootstrap text-secondary */
+    font-size: 10px;
+    z-index: 10;
+    width: 10px !important;
+    transform: translateX(-50%) scale(0.5);
+}
+
+.quotes .swiper-button-prev {
+    margin-right: 15px; /* Controls the closeness */
+}
+
+.quotes .swiper-button-next {
+    margin-left: 25px;
+}
+
+/* =============== footer =========== */
+.foot{
+    min-height: 150px;
+    background-color: #000;
+}
+
+.foot .col-lg-6 h2{
+    color: #FFAA00;
+}
+
+.foot .container .gradient-line{
+    position: absolute;
+    bottom: 40%;
+    background: linear-gradient(to right, #fff, black);
+}
+
+.foot .container .copy a{
+    color: #FFAA00;
+}
+
+.foot .container .copy i{
+    color: #fff;
+    padding-right: 10px;
+}
+
+
+.gradient-line {
+    width: 30%;
+    height: 4px; 
+    background: linear-gradient(to right, #FFAA00, black);
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: -50px;
+}
+
+.work .gradient-line{
+    width: 30%; /* Adjust width as needed */
+    height: 4px; /* Adjust height for thickness */
+    background: linear-gradient(to right, #FFAA00, black);
+    display: block;
+    position: absolute;
+    top: 7%;
+    left: -50px;
+}
+
+.collaborations .gradient-line{
+    width: 30%; /* Adjust width as needed */
+    height: 4px; /* Adjust height for thickness */
+    background: linear-gradient(to left, #FFAA00, black);
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 68.5%;
+}
+.modal-content{
+    border: 1px solid #FFAA00 !important;
+}
+.modal-body{
+    background-color: #000;
+}
+.modal-body label{
+    color: white;
+}
+.modal-header{
+    background-color: #000;
+}
+.modal-header h5{
+    color: white !important;
+}
+.modal-footer{
+    background-color: #000 !important;
+}
